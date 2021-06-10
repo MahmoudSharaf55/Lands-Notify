@@ -1,5 +1,7 @@
 package Main;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +13,7 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -43,7 +46,7 @@ public class Main extends Application {
     private void addAppToTray(final Stage stage) {
         if (SystemTray.isSupported()) {
             tray = SystemTray.getSystemTray();
-            java.awt.Image image = Toolkit.getDefaultToolkit().getImage(System.class.getResource("/resources/icon.png"));
+            java.awt.Image image = Toolkit.getDefaultToolkit().getImage(System.class.getResource("/images/icon.png"));
             stage.setOnCloseRequest(t -> hide(stage));
             final ActionListener closeListener = e -> {
                 Platform.runLater(() -> {
@@ -100,12 +103,16 @@ public class Main extends Application {
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         Scene scene = new Scene(root, 512, 512);
         scene.setFill(Color.TRANSPARENT);
-        primaryStage.getIcons().add(new Image("/resources/icon.png"));
+        primaryStage.getIcons().add(new Image("/images/icon.png"));
         primaryStage.setScene(scene);
         primaryStage.show();
         introStage = primaryStage;
+        Timeline timeline = new Timeline(
+                new KeyFrame(Duration.seconds(5),
+                        event -> hide(primaryStage)));
+        timeline.setCycleCount(1);
+        timeline.play();
     }
-
 
     public static void main(String[] args) {
         launch(args);

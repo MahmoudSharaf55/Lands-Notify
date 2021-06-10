@@ -1,0 +1,116 @@
+------------------- 2021/05/10 17:44:56 -------------------
+Exception on getIndexOfAlarmAndPic:Closed Resultset: next
+------------------- 2021/05/10 17:44:56 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:44:56 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:44:56 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:44:56 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:45:47 -------------------
+Exception on getIndexOfAlarmAndPic:Closed Resultset: next
+------------------- 2021/05/10 17:45:47 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:45:47 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:45:47 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:45:47 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:47:12 -------------------
+>> SELECT * FROM visit3.TEST1 WHERE EXTRA is not null >> img: C:/NDBC/1.png >> sound: C:/NDBC/1.mp3 >> exe: null
+------------------- 2021/05/10 17:48:16 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:16 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:16 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:16 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:28 -------------------
+>> SELECT * FROM visit3.TEST1 WHERE EXTRA is not null >> img: C:/NDBC/1.png >> sound: C:/NDBC/1.mp3 >> exe: null
+------------------- 2021/05/10 17:48:31 -------------------
+Exception on close popup: null
+------------------- 2021/05/10 17:48:41 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:41 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:41 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:49 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:49 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:49 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:49 -------------------
+>> SELECT * FROM visit3.TEST4 WHERE N1_MAIL_Y =? and MAIL_HIDE =? AND DOC_NO =? >> img: C:/NDBC/88.png >> sound: C:/NDBC/88.mp3 >> exe: null
+------------------- 2021/05/10 17:48:59 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:59 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:59 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:48:59 -------------------
+>> SELECT * FROM visit3.TEST4 WHERE N1_MAIL_Y =? and MAIL_HIDE =? AND DOC_NO =? >> img: C:/NDBC/mail.png >> sound: C:/NDBC/mail.mp3 >> exe: null
+------------------- 2021/05/10 17:55:14 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:55:14 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:55:14 -------------------
+Exception on getIndexOfAlarmAndPic:ORA-01410: ROWID غير صالح
+
+------------------- 2021/05/10 17:56:33 -------------------
+>> SELECT * FROM visit3.TEST4 WHERE N1_MAIL_Y =? and MAIL_HIDE =? AND DOC_NO =? >> img: C:/NDBC/88.png >> sound: C:/NDBC/88.mp3 >> exe: null
+------------------- 2021/05/13 15:48:26 -------------------
+DCNDemoListener: got an event with Op: UPDATE - Rowid: AAAgLEAAGAAAHjvAAA
+------------------- 2021/05/13 15:48:26 -------------------
+>> SELECT * FROM visit3.TEST1 WHERE EXTRA is not null >> img: C:/NDBC/1.png >> sound: C:/NDBC/1.mp3 >> exe: null
+------------------- 2021/05/13 15:48:36 -------------------
+DCNDemoListener: got an event with Op: UPDATE - Rowid: AAAgLEAAGAAAHjvAAA
+------------------- 2021/05/13 15:48:52 -------------------
+DCNDemoListener: got an event with Op: UPDATE - Rowid: AAAgLGAAGAAAHj8AAA
+------------------- 2021/05/13 15:48:52 -------------------
+>> SELECT * FROM visit3.TEST3 WHERE M_CODE >= ? >> img: C:/NDBC/3.png >> sound: C:/NDBC/3.mp3 >> exe: null
+------------------- 2021/05/13 15:49:02 -------------------
+DCNDemoListener: got an event with Op: UPDATE - Rowid: AAAgLGAAGAAAHj8AAA
+------------------- 2021/05/13 15:49:02 -------------------
+>> SELECT * FROM visit3.TEST3 WHERE M_CODE >= ? >> img: C:/NDBC/3.png >> sound: C:/NDBC/3.mp3 >> exe: null
+------------------- 2021/05/13 15:49:11 -------------------
+DCNDemoListener: got an event with Op: UPDATE - Rowid: AAAgLGAAGAAAHj8AAA
+------------------- 2021/05/13 15:49:14 -------------------
+DCNDemoListener: got an event with Op: UPDATE - Rowid: AAAgLGAAGAAAHj8AAA
+------------------- 2021/05/13 15:49:14 -------------------
+>> SELECT * FROM visit3.TEST3 WHERE M_CODE >= ? >> img: C:/NDBC/3.png >> sound: C:/NDBC/3.mp3 >> exe: null
+------------------- 2021/06/02 11:57:18 -------------------
+DCNDemoListener: got an event with Op: DELETE - Rowid: AAAWeuAAGAAAHrNAAF
+------------------- 2021/06/02 12:00:20 -------------------
+DCNDemoListener: got an event with Op: INSERT - Rowid: AAAfb6AAGAAAHjNAAq
+------------------- 2021/06/02 12:00:33 -------------------
+DCNDemoListener: got an event with Op: UPDATE - Rowid: AAAfb6AAGAAAHjNAAq
+------------------- 2021/06/02 12:00:38 -------------------
+DCNDemoListener: got an event with Op: UPDATE - Rowid: AAAfb6AAGAAAHjNAAq

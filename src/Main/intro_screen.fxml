@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="512.0" style="-fx-background-image: url(&quot;resources/logo-bg.png&quot;);-fx-background-color: transparent;-fx-background-position: center center;-fx-background-repeat: stretch;" xmlns="http://javafx.com/javafx/8.0.281" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.IntroController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="512.0" style="-fx-background-image: url(&quot;images/logo-bg.png&quot;);-fx-background-color: transparent;-fx-background-position: center center;-fx-background-repeat: stretch;" xmlns="http://javafx.com/javafx/8.0.281" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.IntroController">
    <children>
       <JFXButton alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" layoutX="286.0" layoutY="9.0" onAction="#onClose" prefHeight="24.0" prefWidth="24.0" ripplerFill="#ff7d7d" style="-fx-border-radius: 100; -fx-background-radius: 100; -fx-background-color: #bd1e1e;" text=" " textAlignment="CENTER">
          <graphic>
             <ImageView fitHeight="16.0" fitWidth="12.0" preserveRatio="true">
                <image>
-                  <Image url="@../resources/close.png" />
+                  <Image url="@../images/close.png" />
                </image>
             </ImageView>
          </graphic>
@@ -24,7 +24,7 @@
          <graphic>
             <ImageView fitHeight="16.0" fitWidth="12.0" preserveRatio="true">
                <image>
-                  <Image url="@../resources/minimize.png" />
+                  <Image url="@../images/minimize.png" />
                </image>
             </ImageView>
          </graphic>
@@ -36,7 +36,7 @@
          <graphic>
             <ImageView fitHeight="16.0" fitWidth="12.0" preserveRatio="true">
                <image>
-                  <Image url="@../resources/info.png" />
+                  <Image url="@../images/info.png" />
                </image>
             </ImageView>
          </graphic>

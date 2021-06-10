@@ -11,9 +11,11 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -55,6 +57,12 @@ public class IntroController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        DBChangeNotification dcn = new DBChangeNotification();
+        try {
+            dcn.run();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Fail to connect to Oracle Database,\n" + ex.getMessage());
+        }
         try {
             aboutStage = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource("about_screen.fxml"));
@@ -69,7 +77,7 @@ public class IntroController implements Initializable {
             aboutStage.setTitle("About Lands Notify");
             aboutStage.initStyle(StageStyle.UNDECORATED);
             Scene scene = new Scene(root, 600, 250);
-            aboutStage.getIcons().add(new Image("/resources/icon.png"));
+            aboutStage.getIcons().add(new Image("/images/icon.png"));
             aboutStage.setScene(scene);
         } catch (IOException e) {
             System.out.println(e.getMessage());
