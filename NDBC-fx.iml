@@ -8,7 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jfoenix-8.0.7" level="project" />
-    <orderEntry type="library" name="json-simple-1.1.1" level="project" />
+    <orderEntry type="library" name="libs" level="project" />
     <orderEntry type="library" name="ojdbc7" level="project" />
   </component>
 </module>
