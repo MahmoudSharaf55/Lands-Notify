@@ -1,114 +1,19 @@
 {
   "connection": {
-    "ip": "200.100.115.212",
-    "sid": "orcl",
-    "username": "visit3",
-    "password": "tan1"
+    "ip": "oracle-db-server-ip",
+    "sid": "service-id",
+    "username": "***",
+    "password": "***"
   },
   "timer": 3000,
   "log": true,
   "statements": [
     {
-      "stmt": "SELECT * FROM visit3.b_ELTEZAMAT WHERE n2 is not null and n2_ok is null and section not in ('maly','law') and t_est_ok is null",
+      "stmt": "oracle statement",
       "params": [],
       "imgPath": "resources/1.png",
       "soundPath": "resources/1.mp3",
       "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM LAND.C_MA WHERE n3_confirm =1 AND n2_confirm IS NULL and n2_cancel IS NULL and ((ns is not null and wasela=1) or wasela=2) and ff1 is null",
-      "params": [],
-      "imgPath": "resources/2.png",
-      "soundPath": "resources/2.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM S_TANZEM.TAMAM WHERE o_type <>3 and Z2 IS NOT NULL AND Z2_OK IS NULL AND Z2_C IS NULL AND Z1 IS NULL AND T_DONE IS NULL",
-      "params": [],
-      "imgPath": "resources/3.png",
-      "soundPath": "resources/3.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM visit3.b_ELTEZAMAT WHERE n2_ok is not null and n1_ok is null and n1 is null and t_est_ok is null",
-      "params": [],
-      "imgPath": "resources/1.png",
-      "soundPath": "resources/1.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM LAND.C_MA WHERE n2_confirm =1 AND n1_confirm IS NULL and n1_cancel IS NULL and ff1 is null",
-      "params": [],
-      "imgPath": "resources/2.png",
-      "soundPath": "resources/2.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM S_TANZEM.TAMAM WHERE o_type <>3 and Z1 IS NOT NULL AND Z1_OK IS NULL AND Z1_C IS NULL AND T_DONE IS NULL",
-      "params": [],
-      "imgPath": "resources/3.png",
-      "soundPath": "resources/3.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM land.HAWAFEZ_MODEER where MAGLES = 3 AND MABLAGH > 0",
-      "params": [],
-      "imgPath": "resources/88.png",
-      "soundPath": "resources/88.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM visit3.MOZAKERAT WHERE MOZAKERA_SEND1 IS NOT NULL AND  MOZAKERA_SEND2 is null",
-      "params": [],
-      "imgPath": "resources/moz.png",
-      "soundPath": "resources/moz.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM visit.G_LIST WHERE ENTER_F IS NULL AND CANCEL_F IS NULL AND FARA=1",
-      "params": [],
-      "imgPath": "resources/zar.png",
-      "soundPath": "resources/zar.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM visit.G_LIST WHERE ENTER_F='Y' AND OUT_F is NULL",
-      "params": [],
-      "imgPath": "resources/zar.png",
-      "soundPath": "resources/enter.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM S_TANZEM.TAMAM WHERE T_DONE IS NULL AND o_type<>3 and z_sec0 IS NOT NULL AND Z_SEC IS NULL",
-      "params": [],
-      "imgPath": "resources/3.png",
-      "soundPath": "resources/3.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM LAND.SMS_MAC WHERE SMS IS NOT NULL AND SMS_FINISH IS NULL",
-      "params": [],
-      "imgPath": "resources/i.png",
-      "soundPath": "resources/i.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM visit3.A_ELTEZAMAT WHERE N1_MAIL_Y =? and MAIL_HIDE =? AND DOC_NO =?",
-      "params": [
-        "Y",
-        "N",
-        20000
-      ],
-      "imgPath": "resources/mail.png",
-      "soundPath": "resources/mail.mp3",
-      "exePath": "null"
-    },
-    {
-      "stmt": "SELECT * FROM visit3.b_ELTEZAMAT WHERE n1_ok is not null and NEED_CONV is not null and conv_ok is null",
-      "params": [],
-      "imgPath": "resources/1.png",
-      "soundPath": "resources/9.mp3",
-      "exePath": "C:/LEWA/SLM.fmx"
     }
   ]
 }
