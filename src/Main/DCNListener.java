@@ -62,6 +62,11 @@ public class DCNListener implements DatabaseChangeListener {
             try {
                 query = utils.stmtList.get(i);
                 index = 1;
+                if (DBChangeNotification.conn.isClosed()){
+                    utils.writeLog("Exception on getIndexOfAlarmAndPic:" + " Connection is Closed");
+                    DBChangeNotification.conn = utils.connect(utils.con.ip, utils.con.sid, utils.con.username, utils.con.password);
+                    utils.writeLog("Exception on getIndexOfAlarmAndPic:" + " Connection is Running again");
+                }
                 stmt = (OraclePreparedStatement) DBChangeNotification.conn.prepareStatement(query.stmt + " AND ROWID=?");
                 for (Object val : query.params) {
                     stmt = utils.setStatementParams(stmt, index, val);
@@ -76,7 +81,7 @@ public class DCNListener implements DatabaseChangeListener {
             } catch (SQLException ex) {
 //                System.out.println(ex.getMessage());
                 if (ex.getErrorCode() != 1410) {
-                    utils.writeLog("Exception on getIndexOfAlarmAndPic:" + ex.getMessage());
+                    utils.writeLog("Exception on getIndexOfAlarmAndPic:" + ex.toString());
                 }
             } finally {
                 try {

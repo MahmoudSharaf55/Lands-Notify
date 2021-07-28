@@ -2,6 +2,8 @@ package utils;
 
 import models.ConnectionModel;
 import models.StatementModel;
+import oracle.jdbc.OracleConnection;
+import oracle.jdbc.OracleDriver;
 import oracle.jdbc.OraclePreparedStatement;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -15,6 +17,7 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Properties;
 
 /**
  * @author Ma7MOoOD SHaRaF
@@ -109,5 +112,13 @@ public class FileUtils {
                 System.out.println(e.getMessage());
             }
         }
+    }
+
+    public OracleConnection connect(String ip, String sid, String username, String password) throws SQLException {
+        OracleDriver dr = new OracleDriver();
+        Properties prop = new Properties();
+        prop.setProperty("user", username);
+        prop.setProperty("password", password);
+        return (OracleConnection) dr.connect("jdbc:oracle:thin:@" + ip + ":1521/" + sid, prop);
     }
 }

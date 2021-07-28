@@ -62,6 +62,7 @@ public class IntroController implements Initializable {
             dcn.run();
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Fail to connect to Oracle Database,\n" + ex.getMessage());
+            System.exit(0);
         }
         try {
             aboutStage = new Stage();

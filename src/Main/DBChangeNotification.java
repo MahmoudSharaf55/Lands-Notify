@@ -2,7 +2,6 @@ package Main;
 
 import models.StatementModel;
 import oracle.jdbc.OracleConnection;
-import oracle.jdbc.OracleDriver;
 import oracle.jdbc.OraclePreparedStatement;
 import oracle.jdbc.dcn.DatabaseChangeRegistration;
 import utils.FileUtils;
@@ -33,7 +32,7 @@ public class DBChangeNotification {
     void run() throws SQLException {
         int index = 1;
         utils.readConfigFromJSON();
-        conn = connect(utils.con.ip, utils.con.sid, utils.con.username, utils.con.password);
+        conn = utils.connect(utils.con.ip, utils.con.sid, utils.con.username, utils.con.password);
         Properties prop = new Properties();
         prop.setProperty(OracleConnection.DCN_NOTIFY_ROWIDS, "true");
         prop.setProperty(OracleConnection.DCN_BEST_EFFORT, "true");
@@ -69,13 +68,5 @@ public class DBChangeNotification {
             utils.writeLog("Unregister DCN and connection closed: " + ex.getMessage());
             JOptionPane.showMessageDialog(null, "Listener fail to start,\n" + ex.getMessage());
         }
-    }
-
-    OracleConnection connect(String ip, String sid, String username, String password) throws SQLException {
-        OracleDriver dr = new OracleDriver();
-        Properties prop = new Properties();
-        prop.setProperty("user", username);
-        prop.setProperty("password", password);
-        return (OracleConnection) dr.connect("jdbc:oracle:thin:@" + ip + ":1521/" + sid, prop);
     }
 }
