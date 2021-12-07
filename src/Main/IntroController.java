@@ -8,11 +8,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -55,6 +58,18 @@ public class IntroController implements Initializable {
         return result.isPresent() && result.get() == ButtonType.OK;
     }
 
+    void startupSound() {
+        File startupFile = new File("resources/startup.mp3");
+        if (startupFile.exists()) {
+            MediaPlayer player = new MediaPlayer(new Media(startupFile.toURI().toString()));
+            player.play();
+            player.setOnEndOfMedia(() -> {
+                player.stop();
+                player.dispose();
+            });
+        }
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         DBChangeNotification dcn = new DBChangeNotification();
@@ -65,6 +80,7 @@ public class IntroController implements Initializable {
             System.exit(0);
         }
         try {
+            startupSound();
             aboutStage = new Stage();
             Parent root = FXMLLoader.load(getClass().getResource("about_screen.fxml"));
             root.setOnMousePressed(event -> {

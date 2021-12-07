@@ -65,6 +65,13 @@
       "exePath": "null"
     },
     {
+      "stmt": "SELECT * FROM visit3.nile_MOZAKERAT WHERE MOZAKERA_SEND1 IS NOT NULL AND  MOZAKERA_SEND2 is null",
+      "params": [],
+      "imgPath": "resources/moz.png",
+      "soundPath": "resources/moz.mp3",
+      "exePath": "null"
+    },
+    {
       "stmt": "SELECT * FROM visit.G_LIST WHERE ENTER_F IS NULL AND CANCEL_F IS NULL AND FARA=1",
       "params": [],
       "imgPath": "resources/zar.png",
@@ -106,8 +113,8 @@
     {
       "stmt": "SELECT * FROM visit3.b_ELTEZAMAT WHERE n1_ok is not null and NEED_CONV is not null and conv_ok is null",
       "params": [],
-      "imgPath": "resources/1.png",
-      "soundPath": "resources/9.mp3",
+      "imgPath": "null",
+      "soundPath": "null",
       "exePath": "C:/LEWA/SLM.fmx"
     }
   ]
