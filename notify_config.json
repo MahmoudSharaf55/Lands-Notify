@@ -6,7 +6,7 @@
     "password": "tan1"
   },
   "timer": 3000,
-  "log": true,
+  "log": false,
   "statements": [
     {
       "stmt": "SELECT * FROM visit3.b_ELTEZAMAT WHERE n2 is not null and n2_ok is null and section not in ('maly','law') and t_est_ok is null",
