@@ -116,6 +116,13 @@
       "imgPath": "null",
       "soundPath": "null",
       "exePath": "C:/LEWA/SLM.fmx"
+    },
+    {
+      "stmt": "SELECT * FROM LAND.B_ORDERS WHERE done is null AND SEND_2_BANK IS NOT NULL and ORDER_DATE>'10/12/2021'",
+      "params": [],
+      "imgPath": "resources/BANK.png",
+      "soundPath":  "resources/BANK.mp3",
+      "exePath": "null"
     }
   ]
 }

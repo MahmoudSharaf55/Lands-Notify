@@ -7,6 +7,7 @@ import javafx.scene.media.MediaPlayer;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
@@ -23,11 +24,13 @@ public class Popup {
     String imgPath;
     MediaPlayer player;
     final FileUtils utils;
+    final Dimension screenSize;
 
     public Popup(String soundPath, String imgPath, FileUtils fileUtils) {
         this.soundPath = soundPath;
         this.imgPath = imgPath;
         this.utils = fileUtils;
+        this.screenSize = Toolkit.getDefaultToolkit().getScreenSize();
     }
 
 
@@ -35,7 +38,9 @@ public class Popup {
         try {
             BufferedImage buff = ImageIO.read(new File(path));
             ImageIcon icon = new ImageIcon(buff);
-            return new JLabel(icon);
+            JLabel iconLbl = new JLabel(icon);
+            iconLbl.setSize(buff.getWidth(), buff.getHeight());
+            return iconLbl;
         } catch (IOException e) {
             System.out.println(e.getMessage());
             utils.writeLog("Exception on getImageLbl - read image from path \"" + path + "\" : " + e.getMessage());
@@ -51,35 +56,17 @@ public class Popup {
         }
         if (imgPath != null) {
             JLabel imgLbl = getImageLbl(imgPath);
-            JLabel closeLbl = getImageLbl("close.png");
-            closeLbl.addMouseListener(new MouseListener() {
-                                          @Override
-                                          public void mouseClicked(MouseEvent e) {
-                                              close();
-                                          }
-
-                                          @Override
-                                          public void mousePressed(MouseEvent e) {
-                                          }
-
-                                          @Override
-                                          public void mouseReleased(MouseEvent e) {
-                                          }
-
-                                          @Override
-                                          public void mouseEntered(MouseEvent e) {
-                                          }
-
-                                          @Override
-                                          public void mouseExited(MouseEvent e) {
-                                          }
-                                      }
-            );
+            imgLbl.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    super.mouseClicked(e);
+                    close();
+                }
+            });
             JPanel panel = new JPanel();
             panel.add(imgLbl);
-            panel.add(closeLbl);
             panel.setOpaque(false);
-            f.setSize(500, 400);
+            f.setSize(imgLbl.getWidth(), imgLbl.getHeight());
             f.setLayout(null);
             f.setUndecorated(true);
             f.setBackground(new Color(0, 0, 0, 0));
@@ -88,6 +75,7 @@ public class Popup {
             f.setAlwaysOnTop(true);
             f.setResizable(false);
             f.setLocationRelativeTo(null);
+            f.setLocation((int) screenSize.getWidth() - imgLbl.getWidth() - 10, (int) screenSize.getHeight() - imgLbl.getHeight() - 50);
             f.setVisible(true);
         }
     }
