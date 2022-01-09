@@ -3,9 +3,9 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Lands_Notify_jar</output-path>
     <root id="archive" name="Lands-Notify.jar">
       <element id="module-output" name="Lands-Notify" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/json-simple-1.1.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/ojdbc7.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/jfoenix-8.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jfoenix-8.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/ojdbc7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/json-simple-1.1.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

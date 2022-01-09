@@ -31,7 +31,7 @@
       <Separator layoutX="9.0" layoutY="43.0" prefHeight="0.0" prefWidth="553.0" />
       <Separator layoutX="14.0" layoutY="222.0" prefHeight="0.0" prefWidth="553.0" />
       <JFXButton layoutX="508.0" layoutY="190.0" onAction="#openLog" prefHeight="25.0" prefWidth="79.0" ripplerFill="#5ecfff" style="-fx-background-color: #0093d3; -fx-background-radius: 50;" text="Open Log" />
-      <Label layoutX="13.0" layoutY="46.0" text="Version: 1.0.5 (32-bit) ">
+      <Label layoutX="13.0" layoutY="46.0" text="Version: 1.0.6 (32-bit) ">
          <font>
             <Font size="14.0" />
          </font>
