@@ -1,9 +1,9 @@
 {
   "connection": {
-    "ip": "200.100.115.212",
-    "sid": "orcl",
-    "username": "visit3",
-    "password": "tan1"
+    "ip": "000.000.000.000",
+    "sid": "sid",
+    "username": "dbUser",
+    "password": "dbPassword"
   },
   "timer": 3000,
   "log": false,
