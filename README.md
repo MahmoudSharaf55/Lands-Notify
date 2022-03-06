@@ -3,7 +3,7 @@
     <img src="screenshots/App Icon.png" alt="Logo" width=200 height=200>
   </a>
   <h3 align="center">Lands Notify</h3>
-  <h4 align="center">For Armed Forces Land Projects Authority</h4>
+  <h4 align="center">For Armed Forces Lands Projects Authority</h4>
   <p align="center">
     <strong>Lands Notify</strong> is a database change notification (DCN) program where the client registers its interest to the result of certain queries with the database.
     When the objects associated with these queries change,
